@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERAAAAAAAAERAQAAAAAAEBEAEAAAAAEAEQABAAAAEAARAAAQAAEAABEAAAEAEAAAEQAAABEAAAARAAAAEQAAABEAAAEAEAAAEQAAEAABAAARAAEAAAAQABEAEAAAAAEAEQEAAAAAABAREAAAAAAAAREREREREREREAAAAAP/wAAF/6AABv9gAAd+4AAHveAAB9vgAAfn4AAH5+AAB9vgAAe94AAHfuAABv9gAAX/oAAD/8AAAAAAAA"
+			rel="icon"
+			type="image/x-icon"
+		/>
+		<title>RESULTS</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<!-- Pantalla de Resultados -->
+		<div id="score-screen">
+			<h1>Puntuaciones</h1>
+			<ul id="score-list"></ul>
+			<button id="alphabetical-order-button">Ordenar alfabéticamente</button>
+		</div>
+
+		<!-- Pantalla del Ganador -->
+		<div id="winner-screen">
+			<h2 id="winner-message"></h2>
+			<button id="restart-button">Reiniciar juego</button>
+			<!-- <ul id="final-score-list"></ul> -->
+		</div>
+		<div id="app"></div>
+		<script src="../node_modules/socket.io-client/dist/socket.io.min.js"></script>
+		<script src="../node_modules/vanilla-router/dist/vanilla-router.min.js"></script>
+		<script type="module" src="routes.js"></script>
+		<script type="module" src="socket.js"></script>
+		<!-- <script type="module" src="screen1.js"></script> -->
+	</body>
+</html>
